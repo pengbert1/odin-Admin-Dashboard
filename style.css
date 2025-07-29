@@ -91,6 +91,7 @@ a{
     grid-template-rows: 1fr 1fr;
     grid-gap: 10%;
     align-items: center;
+    box-shadow: 0px 5px  rgb(61, 195, 244);
 }
 
 
@@ -163,15 +164,29 @@ a{
 .project-card{
     padding: 10px;
     border-radius: 5px;
-    box-shadow: -5px 0px rgb(239, 192, 3);
+    box-shadow: -8px 0px  rgb(61, 195, 244);
     grid-row: span 2;
     border-radius: 5px;
     font-size: clamp(8pt, 1vw, 18pt);
     overflow: hidden;
+    position: relative;
 
 
 }
 
+
+
+.card-options{
+    display: flex;
+    position: absolute;
+    bottom:0;
+    align-items: end;
+    justify-content: end;
+    gap:5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+
+}
 
 
 
