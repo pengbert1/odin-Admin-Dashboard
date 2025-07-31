@@ -33,8 +33,8 @@ a{
 }
 
 .vertical-nav{
-    height: 60%;
-    max-height: 500px;
+    height: 100%;
+    max-height: 1000px;
     place-items: center;
 }
 
@@ -44,10 +44,10 @@ a{
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     width: 80%;
-    grid-gap: clamp(10px, 0.5vw, 30px);
     margin-bottom: 10%;
     height: 100%;
     place-items: center;
+    justify-items: left;
 
     
     
@@ -58,9 +58,7 @@ a{
 .nav-list > a{
     margin-left: 0px;
     display: flex;
-    align-content: center;
-    align-items: center;
-    font-size: clamp(10pt,1.5vmin,17pt);
+    align-content: flex-start;
 }
 
 .nav-icons{
@@ -73,7 +71,7 @@ a{
     flex-direction: column;
     height: 100%;
     flex: 1;
-    background-color: rgb(104, 118, 122);
+    background-color: rgb(77, 84, 86);
     min-width: 800px;
     min-height: 500px;
     overflow-y: auto;
@@ -98,7 +96,7 @@ a{
     grid-template-rows: 1fr 1fr;
     
     align-items: center;
-    box-shadow: 0px 5px  rgb(61, 195, 244);
+    box-shadow: 0px 5px  rgb(156, 156, 157);
 }
 
 
@@ -160,7 +158,10 @@ a{
     grid-row: 1 / 4;
     border-radius: 5px;
     grid-template-rows: 1fr 1fr 1fr;
+    border-bottom: 4px solid rgb(156, 156, 157);
     box-shadow: -8px 0px  rgb(183, 243, 5);
+    max-width: 500px;
+    min-width: 300px;
 
     
 }
@@ -180,13 +181,60 @@ a{
 }
 
 
-.treading-bar{
+.trending-bar{
+    display: grid;
+    grid-column: 1fr 1fr 1fr 1fr;
     grid-column-start: 3;
     grid-row: 4 / 7;
     box-sizing: border-box;
     margin-top: 30px;
     border-radius: 5px;
+    border-bottom: 4px solid rgb(156, 156, 157);
     box-shadow: -8px 0px  rgb(183, 243, 5);
+    padding-left: 20px;
+    max-width: 300px;
+    min-width: 200px;
+    
+
+    
+
+}
+
+.trending-user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.trending-user h5{
+    flex-basis: 10%;
+
+}
+
+.trending-user p{
+    flex-basis: 10%;
+}
+
+.user-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-text h5{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.user-text p{
+    margin-top: 4px;
+    padding: 0px;
+}
+
+.account-icon{
+    width: 50px;
+    height: auto;
 }
 
 .main-grid > div{
@@ -198,13 +246,15 @@ a{
 .project-card{
     padding: 10px;
     border-radius: 5px;
-    box-shadow: -8px 0px  rgb(61, 195, 244);
+    border-bottom: 4px solid rgb(156, 156, 157);
+    box-shadow: -8px 0px  rgb(247, 189, 30);
     grid-row: span 2;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
     min-height: 200px;
 
+    
 
 
 }
@@ -258,9 +308,11 @@ a{
 .top-buttons button{
     background-color: rgb(61, 195, 244);
     border-radius: 10px;
-    color: rgb(0, 0, 0);
-    min-width: 50px;
+    color: rgb(255, 255, 255);
+    min-width: 80px;
     max-width: 100px;
+    border: 0px;
+
 
 
 }
